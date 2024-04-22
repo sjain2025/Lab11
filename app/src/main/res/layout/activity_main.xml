@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:lineSpacingMultiplier="1.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="120dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="28sp"
+        android:text="@string/quote_of_the_day"
+        app:layout_constraintBottom_toTopOf="@+id/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="80dp" />
+
+    <TextView
+        android:id="@+id/tagsText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Tags"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:lineSpacingMultiplier="1.2"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        />
+
+    <Button
+        android:id="@+id/refreshButton"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:text="@string/get_new_quote"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintTop_toBottomOf="@+id/tagsText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="72dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:text="@string/save_quote"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintTop_toBottomOf="@+id/refreshButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/viewSavedButton"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:text="@string/view_saved_quotes"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintTop_toBottomOf="@+id/saveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

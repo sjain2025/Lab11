@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context=".MainActivity" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/savedText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="60dp" />
+
+        <TextView
+            android:id="@+id/savedTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="28sp"
+            android:text="@string/saved_quotes"
+            app:layout_constraintBottom_toTopOf="@+id/savedText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="80dp" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:text="@string/go_back"
+            android:backgroundTint="@color/blue"
+            app:layout_constraintTop_toBottomOf="@+id/savedText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="72dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

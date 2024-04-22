@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lab11</string>
+    <string name="quote_of_the_day">Quote of the Day</string>
+    <string name="hello_world">Hello World</string>
+    <string name="save_quote">Save Quote</string>
+    <string name="saved_quotes">Saved Quotes</string>
+    <string name="view_saved_quotes">View Saved Quotes</string>
+    <string name="go_back">Go Back</string>
+    <string name="get_new_quote">Get New Quote</string>
+</resources>
